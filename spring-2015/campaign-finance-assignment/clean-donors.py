@@ -10,3 +10,6 @@ output = []
 # append it into the output list, like this: output.append(cleaned_row)
 
 ########## YOUR CODE GOES HERE ##########
+
+for line in data:
+    print line
