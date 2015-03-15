@@ -28,7 +28,7 @@ br.submit()
 # How many pages do you want to retrieve?
 number_of_pages = 4
 
-output_trs = []
+output = []
 for i in range(number_of_pages):
 
     ########## GO TO THE PROPER PAGE ##########
@@ -48,25 +48,21 @@ for i in range(number_of_pages):
     # We'll grab and parse the HTML to get the appropriate table rows, just like we did before.
     soup = BeautifulSoup(br.response())
     employees = soup.find('table', id="grdEmployees")
-    rows = employees.findAll('tr')[1:]
 
     ########## LOOP OVER ROWS AND CELLS ##########
 
     # This is the same as the equivalent chunk in salaries-mechanize, only we're doing
     # it for multiple pages, rather than just one.
-    for tr in rows:
+    for tr in employees.findAll('tr')[1:]:
         
-        output_tds = []
+        output_row = []
         for td in tr.findAll('td'):
-            output_tds.append(td.text)
+            output_row.append(td.text)
         
-        output_trs.append(output_tds)
+        output.append(output_row)
 
 ########## STEP 4: Write results to file ##########
 
-print output_trs
+print output
 
-handle = open('out-mechanize.csv', 'a')
-outfile = csv.writer(handle)
-
-outfile.writerows(output_trs)
+employees.findAll('tr')[1:]
