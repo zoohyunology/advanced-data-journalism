@@ -27,24 +27,22 @@ br.submit()
 
 soup = BeautifulSoup(br.response())
 employees = soup.find('table', id="grdEmployees")
-rows = employees.findAll('tr')[1:]
 
 ########## STEP 4: Iterate through the results and write to an output list ##########
 
-output_trs = []
-for tr in rows:
+output = []
+for tr in employees.findAll('tr')[1:]:
 
-    output_tds = []
+    output_row = []
     for td in tr.findAll('td'):
-        output_tds.append(td.text)
+        output_row.append(td.text)
 
-    output_trs.append(output_tds)
+    output.append(output_row)
 
 ########## STEP 5: Write results to file ##########
 
-print output_trs
+print output
 
-handle = open('out-mechanize.csv', 'a')
-outfile = csv.writer(handle)
-
-outfile.writerows(output_trs)
+with open('out-mechanize.csv', 'w') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter='|')
+    my_writer.writerows(output)
