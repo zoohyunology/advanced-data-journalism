@@ -65,4 +65,6 @@ for i in range(number_of_pages):
 
 print output
 
-employees.findAll('tr')[1:]
+with open('output-full.csv', 'w') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter='|')
+    my_writer.writerows(output)
