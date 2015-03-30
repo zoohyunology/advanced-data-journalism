@@ -1,20 +1,31 @@
-import urllib2
+import urllib2, csv 
 from BeautifulSoup import BeautifulSoup
 
-html = urllib2.urlopen('https://www.showmeboone.com/sheriff/JailResidents/JailResidents.asp')
+# PART 1
+
+html = urllib2.urlopen('http://www.showmeboone.com/sheriff/jailresidents/jailresidents.asp').read()
+
+# PART 2
 
 soup = BeautifulSoup(html)
 results_table = soup.find('table', attrs={'class': 'resultsTable'})
 
-output_list = [] # This corresponds to the table
+# PART 3
+
+output = []
 
 for tr in results_table.findAll('tr'):
-
-    row_list = []
+    
+    output_row = []
 
     for td in tr.findAll('td'):
-        row_list.append(td.text.replace('&nbsp;', ''))
+        data = td.text.replace('&nbsp;', '')
+        output_row.append(data)
 
-    output_list.append(row_list)
+    output.append(output_row)
 
-print output_list
+# PART 4
+
+with open('inmates.csv', 'w') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter='|')
+    my_writer.writerows(output)
