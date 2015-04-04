@@ -1,6 +1,6 @@
 # API assignment
 
-In this assignment, you're going to do some simple work to interact with and parse data from the Sunlight Foundation's [http://sunlightlabs.github.io/openstates-api/](OpenStates API).
+In this assignment, you're going to do some simple work to interact with and parse data from the Sunlight Foundation's (http://sunlightlabs.github.io/openstates-api/)[OpenStates API].
 
 To make things a little more interesting, we're also going to use this assignment to introduce the concept of functions, which can be useful ways of organizing your code. We'll talk about them a bit in class, but think of them as small, specific purpose tools, not unlike some of the objects we've been using from Python's standard library up to this point.
 
