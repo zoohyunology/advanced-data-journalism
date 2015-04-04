@@ -1,6 +1,7 @@
 import urllib2, json
 
-API_KEY = ''
+# Replace this with your own
+API_KEY = 'd7b45f3b788240acb4ab8c8aa56d7446'
 
 def sample_function(name):
     print 'I am a sample function'
