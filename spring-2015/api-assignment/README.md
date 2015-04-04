@@ -8,4 +8,4 @@ Your job will be to implement one function, ```get_bills()```, that will retriev
 
 To get started, you should sign up for a Sunlight Labs API key. I've included mine in the assignment, just in case, but you should use your own.
 
-The assignment is due *Friday, April 10.* Good luck!
+The assignment is due **Friday, April 10.** Good luck!
