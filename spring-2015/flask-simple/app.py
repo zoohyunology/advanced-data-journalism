@@ -9,28 +9,8 @@ def hello():
 
 @app.route("/json")
 def sample_json():
+
     data = list(csv.DictReader(open("dispatches.csv", 'rU')))
-    
-    # data = {
-    #     'bills': [
-    #         {
-    #             'title': "Modifies death certification laws to include advanced practice registered nurses, assistant physicians, and physician assistants",
-    #             'created_at': "2015-02-26 01:37:57",
-    #             'updated_at': "2015-04-10 00:55:33",
-    #             'id': "MOB00007111",
-    #             'chamber': "upper",
-    #             'state': "mo",
-    #             'session': "2015",
-    #             'type': [
-    #                 "bill"
-    #             ],
-    #             'subjects': [
-    #                 "Transportation"
-    #             ],
-    #             'bill_id': "SB 517"
-    #         }
-    #     ]
-    # }
 
     # Turn the data into JSON
     json_string = json.dumps(data)
@@ -40,6 +20,11 @@ def sample_json():
     response.headers['Content-Type'] = 'application/json'
 
     return response
+
+
+@app.route("/map")
+def crime_static():
+    return render_template("map.html")
 
 
 if __name__ == "__main__":
