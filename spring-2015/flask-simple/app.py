@@ -21,10 +21,13 @@ def sample_json():
 
     return response
 
-
 @app.route("/map")
 def crime_static():
-    return render_template("map.html")
+    return render_template("map.html",
+        name="Chase",
+        greeting="Goodbye",
+        another_name="Nacho",
+        my_list=['a', 'b', 'c'])
 
 
 if __name__ == "__main__":

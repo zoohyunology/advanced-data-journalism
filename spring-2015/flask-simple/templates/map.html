@@ -1,10 +1,38 @@
 <html>
+
   <head>
-    <title>Hello world</title>
+    <title>Columbia Dispatch Map</title>
+
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  
+      <style type="text/css">
+        #map { height: 600px; width: 600px;}
+      </style>
+
   </head>
 
   <body>
-    <h1>Hello World</h1>
+
+    <div id="map"></div>
+
   </body>
+
+
+  <script>
+
+    var map = L.map('map').setView([38.9483, -92.333], 12, 13);
+
+    L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'examples.map-i875mjb7'
+    }).addTo(map);
+
+    L.marker([38.9483, -92.333]).addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.");
+
+  </script>
 
 </html>
