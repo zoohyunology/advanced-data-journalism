@@ -5,6 +5,7 @@
 
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
       <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   
       <style type="text/css">
         #map { height: 600px; width: 600px;}
@@ -32,6 +33,25 @@
     }).addTo(map);
 
     L.marker([38.9483, -92.333]).addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.");
+
+    $.ajax({
+        url: 'http://127.0.0.1:5000/json', // The URL of the datafile you want to load. In this case, could also be written as 127.0.0.1:8000/incidents.json
+        // This "success" argument is a function that executes once the data loads, known as a callback. The function automatically
+        // receives the data once it's loaded via the "data" argument. The data can then be manipulated inside the function.
+        success: function(data) {
+            // Javascript for loop syntax
+            for (i=0; i < data.length; i++){
+                // Check to see whether the record has both an X and Y coordinate
+                if (data[i].XCoord && data[i].YCoord) {
+                    // If it does, plot it on the map, using the syntax we discussed before
+                    L.marker([data[i].YCoord, data[i].XCoord])
+                        .addTo(map)
+                        .bindPopup(data[i].ExtNatureDisplayName);
+                }
+            } // Close the for loop
+
+        } // Close the success function
+      });
 
   </script>
 
