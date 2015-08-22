@@ -1,6 +1,6 @@
 # Advanced Data Journalism (J4432), Fall 2015
 
-Welcome to J4432, Advanced Data Journalism, for the fall semester of 2015. You can find a syllabus and schedule on the course website. The rest of the course materials will live in this repository.
+Welcome to J4432, Advanced Data Journalism, for the fall semester of 2015. You can find a syllabus and schedule on the [course website](http://cjdd3b.github.io/advanced-data-journalism). The rest of the course materials will live in this repository.
 
 ## Software requirements
 
