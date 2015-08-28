@@ -4,7 +4,7 @@ Working with Python (and pretty much any other programming language) means becom
 
 ![OSX terminal window](https://f.cloud.github.com/assets/947791/119759/801b7d6a-6cb3-11e2-8eab-d3c9f2dcac15.png)
 
-In basic terms, the command line allows you to communicate with your computer at a lower level that is more explicit than the user-friendly graphical environments that you typically use. This has both advantages and disadvantages. The good thing about learning a little about the command line is that is enables you to configure your computer in new ways, and to run software that simply doesn't work in a graphical environment. The downside is that it takes a little time to learn. Here we'll walk you through most of the basics you'll need to know to succeed in this class.
+In basic terms, the command line allows you to communicate with your computer at a lower level that is more explicit than the user-friendly graphical environments that you typically use. This has both advantages and disadvantages. The good thing about learning a little about the command line is that is enables you to configure your computer in new ways, and to run software that simply doesn't work in a graphical environment. The downside is that it takes a little time to learn. Here we'll walk you through most of the basics you'll need to know for this class.
 
 ## Opening the command line
 
@@ -16,7 +16,7 @@ On Windows, navigate to the **Start Menu** and find the box called **Run**. Clic
 
 ## Basic commands (OSX)
 
-Most of what you'll be doing from the command line at this point will be navigating through directories and running Python files. These actions require only a few basic commands, which I'll cover here. Windows and OSX have slightly different syntaxes for their terminal commands, so we'll go over OSX first.
+Most of what you'll be doing from the command line at this point will be navigating through directories and running Python files. These actions require only a few basic commands, which I'll cover here. Out of the box, Windows and OSX use a slightly different syntax for their terminal commands, but Windows users can gain access to OSX-style commands by installing [Cygwin](https://www.cygwin.com/).
 
 ### Listing and changing directories
 
@@ -99,4 +99,4 @@ Working from the command line can be difficult and tedious at first. Here are a 
 
 **Go straight home**: Your home directory is sort of like True North in command line world. It's a great way to orient yourself if you end up lost in the file system. In OSX, no matter where you are in the directory structure, you can immediately get back home by either typing ```cd``` or ```cd ~/```.
 
-**Guides and cheat sheets**: [Here's](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) a useful guide for simple command line syntax on OSX and Linux. And [here's](http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/) another one for Windows.
+**Guides and cheat sheets**: [Here's](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) a useful guide for simple command line syntax on OSX and Linux.
