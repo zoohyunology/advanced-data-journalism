@@ -6,19 +6,15 @@ Some housekeeping on tap today, along with some discussion of the three traditio
 
 Sarah Cohen, my colleague at the Times, draws a distinction between "data journalism" and "journalism about data." The former uses data as a tool to pursue a story, like the investigative/CAR-style analyses you're used to. In the latter, the data *is* the story. Think [FiveThirtyEight](http://www.fivethirtyeight.com). Either way, doing data analysis for news requires many of the same skills -- database and spreadsheet skills, statistics, simple programming -- most of which have been in use for [decades](http://www.unc.edu/~pmeyer/book/).
 
-EXAMPLES
-
 ## Data visualization/news applications
 
 The mid to late 2000s saw an explosion in digital story forms that used data in new and interesting ways. Rather than simply analyzing data and providing results in the form of a story, data journalists started building news applications to allow readers to explore and contextualize the data on their own. Others started building sophisticated charts, maps and interactive presentations that used data to tell stories visually.
-
-EXAMPLES
 
 ## Software development for news
 
 Attracted by data visualizations and the growing popularity of data journalism, software developers and data scientists without traditional journalism backgrounds have been pouring into newsrooms over the last several years. Although some work on CAR and data visualization projects, others have focused on tools, templates and open source projects, using their tech skills to solve long-standing newsroom problems and create new products.
 
-- LISTY
+- **[Listy](http://www.nytimes.com/interactive/2015/04/14/dining/field-guide-to-the-sandwich.html?_r=0**: Developers at the Times have built a tool that makes it easy for producers and reporters to create list-shaped articles, popularizing a new story form that has been used dozens of times.
 
 - NPR
 
