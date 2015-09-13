@@ -1,0 +1,3 @@
+# Class 9 (Monday, Sept. 14, 2015)
+
+Just a couple more days left of [Python basics](https://github.com/cjdd3b/advanced-data-journalism/blob/master/class6/python-basics.md). Today we'll talk about control structures like for loop and if statements, which will require breaking out of the interactive interpreter and writing Python code like normal coders do: as standalone programs run from the command line.
