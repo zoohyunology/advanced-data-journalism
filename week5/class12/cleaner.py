@@ -6,7 +6,7 @@ outfile = open('./data/sample-clean.csv', 'w')
 
 # Now a DictReader and DictWriter
 reader = csv.DictReader(csvfile)
-writer = csv.DictWriter(outfile, fieldnames=reader.fieldnames)
+writer = csv.DictWriter(outfile, reader.fieldnames)
 
 # Write headers
 writer.writeheader()
