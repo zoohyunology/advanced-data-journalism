@@ -7,8 +7,10 @@ br.open('http://a073-ils-web.nyc.gov/inmatelookup/ils/pages/common/find.jsf')
 
 # Fill out the form
 br.select_form('mainform')
-br.form['mainform:sub_maincontent:fname'] = '%'
-br.form['mainform:sub_maincontent:lname'] = '%'
+br.form['mainform:sub_maincontent:birthdate'] = ['05']
+br.form['mainform:sub_maincontent:day'] = ['12']
+br.form['mainform:sub_maincontent:year'] = ['1983']
+
 
 # Submit the form
 br.submit()
