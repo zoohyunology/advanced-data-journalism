@@ -1,3 +1,3 @@
-# Class 29 (Friday, Oct. 30, 2015)
+# Class 28 (Wednesday, Oct. 28, 2015)
 
-More work with [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html) and [agate](http://agate.readthedocs.org/en/1.0.1/). You'll also want to download [this file](https://github.com/onyxfish/agate/blob/master/examples/realdata/exonerations-20150828.csv), which is a copy of the [National Registry of Exonerations](http://www.law.umich.edu/special/exoneration/Pages/detaillist.aspx) made in late August. We'll be using it to follow the [agate tutorial](http://agate.readthedocs.org/en/1.0.0/tutorial.html).
+Today we'll begin to discuss the basics of the next unit: data analysis using Python. If you want to get a head start, download and install [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html) and [agate](http://agate.readthedocs.org/en/1.0.1/), which we'll use in class going forward.
