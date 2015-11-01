@@ -6,7 +6,6 @@ def clean_json(json):
     '''
     return re.sub(r'new Date\(.*?\)', '""', json)
 
-
 # Apply the above function like so ...
 
 # dirty_json = urllib2.urlopen(whatever).read()
