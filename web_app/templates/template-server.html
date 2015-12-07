@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Hello world</title>
+  </head>
+
+  <body>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Address</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            <td>{{ row.CallDateTime }}</td>
+            <td>{{ row.ExtNatureDisplayName }}</td>
+            <td>{{ row.Address }}
+        </tr>
+        {% endfor %}
+    </table>
+
+  </body>
+
+</html>
