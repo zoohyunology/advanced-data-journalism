@@ -1,6 +1,6 @@
-# Advanced Data Journalism (J4432), Fall 2015
+# Advanced Data Journalism (J4432), Spring 2016
 
-Welcome to J4432, Advanced Data Journalism, for the fall semester of 2015. You can find a syllabus and schedule on the [course website](http://cjdd3b.github.io/advanced-data-journalism). The rest of the course materials will live in this repository.
+Welcome to J4432, Advanced Data Journalism, for the spring semester of 2016. You can find a syllabus and schedule on the [course website](http://cjdd3b.github.io/advanced-data-journalism). The rest of the course materials will live in this repository.
 
 ## Software requirements
 
@@ -20,6 +20,10 @@ To make our lives easier, Python comes with two package management tools, which 
 
 **On OSX**: easy_install should already be included. To install pip, simply type ```sudo easy_install pip``` and enter your administrative password.
 
+### Virtualenv and virtualenvwrapper
+
+To mitigate issues with permissions and operating system versions, I'd recommend you also install virtualenv and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html) (the latter should install the former). We'll talk a bit about this in class, but feel free to work ahead if you want.
+
 ### Various Python packages
 
 Once you install pip, you'll easily be able to install the various Python packages we'll use in class using the command ```pip install LIBRARY-NAME```. If you're on a Mac, be aware that you may have to use the slightly different command ```sudo pip install LIBRARY-NAME```, and then enter your system password, in order to install the software as a superuser.
@@ -29,6 +33,7 @@ Libraries we'll be using include:
 - [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) for web scraping (```pip install BeautifulSoup```)
 - [Mechanize](http://wwwsearch.sourceforge.net/mechanize/), also for web scraping (```pip install mechanize```)
 - [Flask](http://flask.pocoo.org/) for web development (```pip install Flask```)
+- [Jupyter notebook](http://jupyter.readthedocs.org/en/latest/install.html) for web development (```pip install jupyter```)
 
 There will be others. You should use the setup time early in the semester to get comfortable with installing packages in genral, so you can continue to add them as the class requires.
 

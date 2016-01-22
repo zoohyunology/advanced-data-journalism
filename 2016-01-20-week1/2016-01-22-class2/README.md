@@ -1,4 +1,4 @@
-# Class 2 (Wednesday, Aug. 26, 2015)
+# Class 2 (Friday, Jan. 22, 2016)
 
 Some housekeeping on tap today, along with some discussion of the three traditional career paths that have developed in the world of "advanced" data journalism: CAR/data analysis, data visualization and building software in newsrooms.
 
@@ -14,7 +14,7 @@ The mid to late 2000s saw an explosion in digital story forms that used data in 
 
 Attracted by data visualizations and the growing popularity of data journalism, software developers and data scientists without traditional journalism backgrounds have been pouring into newsrooms over the last several years. Although some work on CAR and data visualization projects, others have focused on tools, templates and open source projects, using their tech skills to solve long-standing newsroom problems and create new products.
 
-- **[Listy](http://www.nytimes.com/interactive/2015/04/14/dining/field-guide-to-the-sandwich.html?_r=0**: Developers at the Times have built a tool that makes it easy for producers and reporters to create list-shaped articles, popularizing a new story form that has been used dozens of times.
+- **[Listy](http://www.nytimes.com/interactive/2015/04/14/dining/field-guide-to-the-sandwich.html?_r=0**): Developers at the Times have built a tool that makes it easy for producers and reporters to create list-shaped articles, popularizing a new story form that has been used dozens of times.
 
 - NPR
 
