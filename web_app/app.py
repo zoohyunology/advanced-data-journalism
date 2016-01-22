@@ -15,7 +15,6 @@ def template_test(name=None):
     capitalized_name = name.upper()
     return render_template("template-test.html", test=capitalized_name)
 
-
 ########## SERVER-SIDE RENDERING ##########
 
 @app.route("/incidents-server")
