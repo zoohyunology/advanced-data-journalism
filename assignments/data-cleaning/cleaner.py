@@ -2,14 +2,14 @@ import csv
 
 # define and open our input and output files
 old = open('./data/cleanme.csv', 'r')
-new = open('./data/cleanedversion.csv', 'w')
+#new = open('./data/cleanedversion.csv', 'w')
 
 # now use DictReader and DictWriter methods within the files
 reader = csv.DictReader(old)
-writer = csv.DictWriter(new, reader.fieldnames)
+#writer = csv.DictWriter(new, reader.fieldnames)
 
 # write headers
-writer.writeheader()
+#writer.writeheader()
 
 # clean
 for taco in reader: 
