@@ -9,21 +9,21 @@ writer = csv.writer(output)
 br = mechanize.Browser()
 br.open('http://enr.sos.mo.gov/EnrNet/CountyResults.aspx')
 
-# First drop down
+# first drop down
 br.select_form(nr=0)
 br.form['ctl00$MainContent$cboElectionNames'] = ['750003566']
 br.submit('ctl00$MainContent$btnElectionType')
 html = br.response().read()
 soup = BeautifulSoup(html, "html.parser")
 
-# Second drop down
-# Make a list of all the options
+# second drop down
 dropdown = soup.find('select', id = 'cboCounty').find_all('option')
 
+# loop
 counties = []
 
 for i in dropdown:
-    county = {'name':i.text, 'num':i['value']}
+    county = {'name':i.text, 'num':i['value']} # loop values
     counties.append(county)
 
 for county in counties: 
