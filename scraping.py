@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 # output 
 output = open('output.csv', 'w')
 writer = csv.writer(output)
+writer.writerow(["County", "Clinton", "Sanders", "Cruz", "Kasich", "Trump"])
 
 # HTML
 br = mechanize.Browser()
